@@ -20,8 +20,7 @@ html, body {
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
-    width: 995px;
-  }
+    width: 690px;
 }
 
 h2 {
@@ -32,7 +31,11 @@ h3 {
   font-size: 20px;
 }
 
-/* -------- // -------- Javascript Accordion -------- // -------- */
+/* -------- -------- Javascript Accordion -------- -------- */
+.list-item .accordion {
+  color: $blue-dianne;
+}
+
 li + li {
   margin-top: 6px;
 }
@@ -41,13 +44,13 @@ li + li {
   padding-left: 8px;
 }
 
-.accordion-container {
+.accordion__block {
   height: 48px;	
   width: 690px;
 }
 
 .accordion__cell {
-  border: 1px solid #E6E9EA;
+  border: 1px solid $porcelain;
   border-radius: 2px;
 }
 
@@ -55,33 +58,30 @@ li + li {
   border-bottom: none;
 } 
 
-.accordion-paragraph, .accordion {
-  padding: 12px 16px;
-}
-
 .accordion {
   cursor: pointer;
   width: 100%;
   text-align: left;
   font-size: 16px;
-  color: #1E3945;
+  color: $blue-dianne;
   border: none;
+  padding: 12px 16px;
 }
 
 .panel {
   max-height: 0;
   overflow: hidden;
   transition: 0.2s ease-out; 
-  background-color: white;
+  background-color: $white;
 }
 
 .accordion:after {
-  content: url('./images/ic_expand_more_down.svg');
+  content: url('./images/ic_expand_more.svg');
   float: right;
 }
 
 .active:after {
-  content: url('./images/ic_expand_less_up.svg');
+  content: url('./images/ic_expand_less.svg');
 } 
 
 .accordion:focus {
@@ -95,4 +95,4 @@ li + li {
 .active { 
   max-height: 100vh;
 }
-/* -------- //// ------------------------------------ //// -------- */
+/* -------- ------------------------------------ -------- */

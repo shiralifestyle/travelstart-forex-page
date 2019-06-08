@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="12px" height="8px" viewBox="0 0 12 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 55 (78076) - https://sketchapp.com -->
+    <title>3721A830-577A-4CFF-8984-4CD244A81EF7</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <polygon id="path-1" points="12 8 6 14 7.41 15.41 12 10.83 16.59 15.41 18 14"></polygon>
+    </defs>
+    <g id="VISA-page" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="DES-434_Forex-page" transform="translate(-798.000000, -3305.000000)">
+            <g id="List-/-Single-Line-/-Default-Copy-17" transform="translate(142.000000, 3285.000000)">
+                <g id="Content" transform="translate(16.000000, 12.000000)">
+                    <g id="Right-Icon" transform="translate(634.000000, 0.000000)">
+                        <g id="ic_expand_less">
+                            <polygon id="Bounds" points="0 0 24 0 24 24 0 24"></polygon>
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <use id="Icon" fill="#50656E" xlink:href="#path-1"></use>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
