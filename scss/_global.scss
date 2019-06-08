@@ -20,7 +20,8 @@ html, body {
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
-    width: 690px;
+    width: 996px;
+  }
 }
 
 h2 {
@@ -45,33 +46,35 @@ li + li {
 }
 
 .accordion__block {
-  height: 48px;	
+  
   width: 690px;
 }
 
 .accordion__cell {
   border: 1px solid $porcelain;
   border-radius: 2px;
+  
 }
 
 .cell-1 {
   border-bottom: none;
-} 
+}
 
 .accordion {
+  height: 48px;	
   cursor: pointer;
   width: 100%;
   text-align: left;
   font-size: 16px;
   color: $blue-dianne;
-  border: none;
+  border: 0;
   padding: 12px 16px;
 }
 
 .panel {
   max-height: 0;
   overflow: hidden;
-  transition: 0.2s ease-out; 
+  transition: .2s ease-out;
   background-color: $white;
 }
 
@@ -82,7 +85,7 @@ li + li {
 
 .active:after {
   content: url('./images/ic_expand_less.svg');
-} 
+}
 
 .accordion:focus {
   outline: none;

@@ -1,7 +1,50 @@
-.overview {
+$sidebar-width: 250px;
+$content-margin: 56px;
 
-  &-content {
-    font-size: 20px;
-    line-height: 29px;
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  width: calc(100% - #{$sidebar-width});
+  margin-right: 56px;
+}
+
+.overview {
+  font-size: 20px;
+  line-height: 29px;  
+}
+
+
+aside {
+  width: $sidebar-width;
+  height: 322px;
+  padding: 16px;
+  background-color: $white;
+  box-shadow: 0 0 4px 0 rgba(5,35,49,0.14), 0 3px 4px 0 rgba(5,35,49,0.12);
+
+  h3 {
+    margin: 0;
   }
 }
+
+nav {
+  display: flex;
+  flex-direction: column;
+
+  a {
+    color: $blue-dianne;
+    padding-top: 16px;
+    text-decoration: none;
+  }
+}
+
+a::after {
+  content: url('./images/ic_chevron_right.svg');
+  float: right;
+}
+
+
+
+

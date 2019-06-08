@@ -21,7 +21,7 @@ html, body {
 
 @media (min-width: 1280px) {
   .fixed-container {
-    width: 995px;
+    width: 996px;
   }
 }
 
@@ -33,7 +33,11 @@ h3 {
   font-size: 20px;
 }
 
-/* -------- // -------- Javascript Accordion -------- // -------- */
+/* -------- -------- Javascript Accordion -------- -------- */
+.list-item .accordion {
+  color: #1E3945;
+}
+
 li + li {
   margin-top: 6px;
 }
@@ -42,8 +46,7 @@ li + li {
   padding-left: 8px;
 }
 
-.accordion-container {
-  height: 48px;
+.accordion__block {
   width: 690px;
 }
 
@@ -56,33 +59,31 @@ li + li {
   border-bottom: none;
 }
 
-.accordion-paragraph, .accordion {
-  padding: 12px 16px;
-}
-
 .accordion {
+  height: 48px;
   cursor: pointer;
   width: 100%;
   text-align: left;
   font-size: 16px;
   color: #1E3945;
-  border: none;
+  border: 0;
+  padding: 12px 16px;
 }
 
 .panel {
   max-height: 0;
   overflow: hidden;
-  transition: 0.2s ease-out;
-  background-color: white;
+  transition: .2s ease-out;
+  background-color: #FFFFFF;
 }
 
 .accordion:after {
-  content: url("./images/ic_expand_more_down.svg");
+  content: url("./images/ic_expand_more.svg");
   float: right;
 }
 
 .active:after {
-  content: url("./images/ic_expand_less_up.svg");
+  content: url("./images/ic_expand_less.svg");
 }
 
 .accordion:focus {
@@ -97,23 +98,63 @@ li + li {
   max-height: 100vh;
 }
 
-/* -------- //// ------------------------------------ //// -------- */
+/* -------- ------------------------------------ -------- */
 .masthead {
-  background-image: url("../images/forex-hero-img");
+  background-image: url("./images/forex-hero-img.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  padding: 32px 0;
-  height: 981px;
-  width: 1306px;
-}
-
-.masthead-inner {
+  height: 254px;
+  width: 100%;
+  margin-bottom: 48px;
   display: flex;
-  align-items: bottom;
+  flex-direction: column;
 }
 
-.overview-content {
+.masthead-title {
+  color: #FFFFFF;
+  font-size: 48px;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-content {
+  width: calc(100% - 250px);
+  margin-right: 56px;
+}
+
+.overview {
   font-size: 20px;
   line-height: 29px;
+}
+
+aside {
+  width: 250px;
+  height: 322px;
+  padding: 16px;
+  background-color: #FFFFFF;
+  box-shadow: 0 0 4px 0 rgba(5, 35, 49, 0.14), 0 3px 4px 0 rgba(5, 35, 49, 0.12);
+}
+
+aside h3 {
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+}
+
+nav a {
+  color: #1E3945;
+  padding-top: 16px;
+  text-decoration: none;
+}
+
+a::after {
+  content: url("./images/ic_chevron_right.svg");
+  float: right;
 }
