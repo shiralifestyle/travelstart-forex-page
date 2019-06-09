@@ -33,6 +33,15 @@ h3 {
   font-size: 20px;
 }
 
+.content-container a {
+  text-decoration: none;
+  color: #1BB3F5;
+}
+
+ul li {
+  padding-left: 8px;
+}
+
 /* -------- -------- Javascript Accordion -------- -------- */
 .list-item .accordion {
   color: #1E3945;
@@ -42,12 +51,8 @@ li + li {
   margin-top: 6px;
 }
 
-.list-item {
-  padding-left: 8px;
-}
-
 .accordion__block {
-  width: 690px;
+  width: auto;
 }
 
 .accordion__cell {
@@ -121,6 +126,14 @@ main {
   flex-direction: row;
 }
 
+.content-container {
+  margin-bottom: 48px;
+}
+
+.content-container-text, .content-container-second-text, .content-container-tips-header {
+  margin-bottom: 24px;
+}
+
 .main-content {
   width: calc(100% - 250px);
   margin-right: 56px;
@@ -129,6 +142,10 @@ main {
 .overview {
   font-size: 20px;
   line-height: 29px;
+}
+
+.overview-content {
+  margin-top: 0;
 }
 
 aside {
@@ -154,7 +171,68 @@ nav a {
   text-decoration: none;
 }
 
-a::after {
+nav a::after {
   content: url("./images/ic_chevron_right.svg");
   float: right;
+}
+
+.numbered-block {
+  radius: 2px;
+  height: 58px;
+  width: auto;
+  border: 1px solid #E6E9EA;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
+}
+
+footer {
+  padding: 89px 0 40px 0;
+}
+
+.outro-text {
+  text-align: center;
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+  margin-bottom: 62px;
+}
+
+.tile-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 384px;
+  height: 97px;
+  box-shadow: 0 0 2px 0 rgba(5, 35, 49, 0.14), 0 2px 2px 0 rgba(5, 35, 49, 0.12);
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  text-decoration: none;
+}
+
+.tile-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 33%;
+  height: 100%;
+}
+
+.tile-text {
+  padding-left: 20px;
+  width: 67%;
+  font-weight: normal;
+}
+
+.tile-text h4 {
+  color: #1E3945;
+  font-size: 20px;
+  text-decoration: none;
 }

@@ -6,6 +6,14 @@ main {
   flex-direction: row;
 }
 
+.content-container {
+  margin-bottom: 48px;
+
+  &-text, &-second-text, &-tips-header {
+    margin-bottom: 24px;
+  }
+}
+
 .main-content {
   width: calc(100% - #{$sidebar-width});
   margin-right: 56px;
@@ -14,8 +22,11 @@ main {
 .overview {
   font-size: 20px;
   line-height: 29px;  
-}
 
+  &-content {
+    margin-top: 0;
+  }
+}
 
 aside {
   width: $sidebar-width;
@@ -40,9 +51,20 @@ nav {
   }
 }
 
-a::after {
+nav a::after {
   content: url('./images/ic_chevron_right.svg');
   float: right;
+}
+
+.numbered-block {
+  radius: 2px;
+  height: 58px;
+  width: auto;
+  border: 1px solid $porcelain;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 16px;
 }
 
 

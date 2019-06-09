@@ -32,6 +32,15 @@ h3 {
   font-size: 20px;
 }
 
+.content-container a {
+  text-decoration: none;
+  color: $dodger-blue;
+}
+
+ul li {
+  padding-left: 8px;
+}
+
 /* -------- -------- Javascript Accordion -------- -------- */
 .list-item .accordion {
   color: $blue-dianne;
@@ -41,24 +50,19 @@ li + li {
   margin-top: 6px;
 }
 
-.list-item {
-  padding-left: 8px;
-}
-
 .accordion__block {
-  
-  width: 690px;
+  width: auto;
 }
 
 .accordion__cell {
   border: 1px solid $porcelain;
   border-radius: 2px;
-  
 }
 
 .cell-1 {
   border-bottom: none;
 }
+
 
 .accordion {
   height: 48px;	

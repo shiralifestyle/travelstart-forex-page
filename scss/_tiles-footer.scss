@@ -1,0 +1,50 @@
+footer {
+  padding: 89px 0 40px 0;
+}
+
+.outro-text {
+  text-align: center;
+}
+
+.tile-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 1200px;
+  margin-bottom: 62px;
+}
+
+.tile-card{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 384px;
+  height: 97px;
+  box-shadow: 0 0 2px 0 rgba(5,35,49,0.14), 0 2px 2px 0 rgba(5,35,49,0.12);
+  border-radius: 2px;
+  background-color: $white;
+  text-decoration: none;
+}
+
+.tile-image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 33%;
+  height: 100%;
+}
+
+.tile-text {
+  padding-left: 20px;
+  width: 67%;
+  font-weight: normal;
+
+  h4 {
+    color: $blue-dianne;
+    font-size: 20px;
+    text-decoration: none;
+  }
+}
+
