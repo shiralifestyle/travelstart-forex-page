@@ -9,6 +9,11 @@ main {
 .content-container {
   margin-bottom: 48px;
 
+  // Desktop: 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    margin-bottom: 48px;
+  }
+
   &-text, &-second-text, &-tips-header {
     margin-bottom: 24px;
   }
@@ -16,17 +21,31 @@ main {
 
 .overview-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
+  margin: 16px;
+
+  // Desktop: 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .overview-container-main {
   font-size: 20px;
   line-height: 29px;  
-  margin-top: 0;
-  width: calc(100% - #{$sidebar-width});
-  margin-right: 56px;
-} 
+
+  // Desktop: 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    font-size: 20px;
+    line-height: 29px;  
+    margin-top: 0;
+    width: calc(100% - #{$sidebar-width});
+    margin-right: 56px;
+  } 
+}
 
 aside {
   width: $sidebar-width;
@@ -68,9 +87,15 @@ nav a::after {
 }
 
 
-main-content {
-  width: calc(100% - #{$sidebar-width});
-  margin-right: 56px;
+.main-content {
+  margin: 16px;
+
+  // Desktop: 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    width: calc(100% - #{$sidebar-width});
+    margin-right: 56px;
+    padding-right: 46px;
+  }
 } 
 
 
