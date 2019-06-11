@@ -19,6 +19,12 @@ html, body {
   margin: 0 auto;
 }
 
+@media (min-width: 900px) {
+  .fixed-container {
+    width: 800px;
+  }
+}
+
 @media (min-width: 1280px) {
   .fixed-container {
     width: 996px;
@@ -127,7 +133,7 @@ main {
 }
 
 .content-container {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 }
 
 @media (min-width: 1280px) {
@@ -144,7 +150,16 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 16px;
+  margin: 16px 16px 48px 16px;
+}
+
+@media (min-width: 900px) {
+  .overview-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -160,13 +175,20 @@ main {
   line-height: 29px;
 }
 
+@media (min-width: 900px) {
+  .overview-container-main {
+    width: calc(100% - 250px);
+    margin-right: 56px;
+  }
+}
+
 @media (min-width: 1280px) {
   .overview-container-main {
     font-size: 20px;
     line-height: 29px;
     margin-top: 0;
     width: calc(100% - 250px);
-    margin-right: 56px;
+    margin-right: 64px;
   }
 }
 
@@ -216,8 +238,8 @@ nav a::after {
 @media (min-width: 1280px) {
   .main-content {
     width: calc(100% - 250px);
-    margin-right: 56px;
-    padding-right: 46px;
+    margin: 0;
+    padding-right: 56px;
   }
 }
 
@@ -227,12 +249,20 @@ footer {
 
 @media (min-width: 1280px) {
   footer {
-    padding: 89px 0 40px 0;
+    padding: 135px 0 40px 0;
   }
 }
 
 .outro-text {
   text-align: center;
+  margin-top: 0;
+}
+
+@media (min-width: 1280px) {
+  .outro-text {
+    text-align: center;
+    margin-top: 0;
+  }
 }
 
 .tile-container {
@@ -241,6 +271,14 @@ footer {
   align-content: space-between;
   width: 100%;
   margin-bottom: 32px;
+}
+
+@media (min-width: 900px) {
+  .tile-container {
+    margin: 0 auto;
+    flex-direction: row;
+    margin-bottom: 48px;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -265,10 +303,13 @@ footer {
   border-radius: 2px;
   background-color: #FFFFFF;
   text-decoration: none;
+  margin-top: 16px;
 }
 
-.tile-card .middle {
-  margin: 16px 0 16px 0;
+@media (min-width: 900px) {
+  .tile-card {
+    margin-top: 0;
+  }
 }
 
 @media (min-width: 1280px) {
@@ -283,6 +324,12 @@ footer {
     border-radius: 2px;
     background-color: #FFFFFF;
     text-decoration: none;
+  }
+}
+
+@media (min-width: 900px) {
+  .middle-card {
+    margin: 0 16px 0 16px;
   }
 }
 

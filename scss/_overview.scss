@@ -7,7 +7,7 @@ main {
 }
 
 .content-container {
-  margin-bottom: 48px;
+  margin-bottom: 40px;
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
@@ -23,7 +23,15 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  margin: 16px;
+  margin: 16px 16px 48px 16px;
+
+  // Desktop: 900px
+  @media (min-width: #{$screen-tablet-large}) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+  }
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
@@ -37,13 +45,19 @@ main {
   font-size: 20px;
   line-height: 29px;  
 
+  // Desktop: 900px
+  @media (min-width: #{$screen-tablet-large}) {
+    width: calc(100% - #{$sidebar-width});
+    margin-right: 56px;
+  }
+
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
     font-size: 20px;
     line-height: 29px;  
     margin-top: 0;
     width: calc(100% - #{$sidebar-width});
-    margin-right: 56px;
+    margin-right: 64px;
   } 
 }
 
@@ -93,8 +107,8 @@ nav a::after {
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
     width: calc(100% - #{$sidebar-width});
-    margin-right: 56px;
-    padding-right: 46px;
+    margin: 0;
+    padding-right: 56px;
   }
 } 
 

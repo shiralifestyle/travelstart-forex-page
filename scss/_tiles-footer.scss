@@ -3,12 +3,19 @@ footer {
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
-    padding: 89px 0 40px 0;
+    padding: 135px 0 40px 0;
   }
 }
 
 .outro-text {
   text-align: center;
+  margin-top: 0;
+
+  // Desktop: 1280px
+  @media (min-width: #{$screen-desktop-large}) {
+    text-align: center;
+    margin-top: 0;
+  }
 }
 
 .tile-container {
@@ -17,6 +24,13 @@ footer {
   align-content: space-between;
   width: 100%;
   margin-bottom: 32px;
+
+  // Desktop: 900px
+  @media (min-width: #{$screen-tablet-large}) {
+    margin: 0 auto;
+    flex-direction: row;
+    margin-bottom: 48px;
+  }
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
@@ -40,9 +54,11 @@ footer {
   border-radius: 2px;
   background-color: $white;
   text-decoration: none;
+  margin-top: 16px;
 
-  .middle {
-    margin: 16px 0 16px 0;
+  // Desktop: 900px
+  @media (min-width: #{$screen-tablet-large}) {
+    margin-top: 0;
   }
 
   // Desktop: 1280px
@@ -57,6 +73,13 @@ footer {
     border-radius: 2px;
     background-color: $white;
     text-decoration: none;
+  }
+}
+
+.middle-card {
+  // Desktop: 900px
+  @media (min-width: #{$screen-tablet-large}) {
+  margin: 0 16px 0 16px;
   }
 }
 
