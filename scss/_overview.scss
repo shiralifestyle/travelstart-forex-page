@@ -14,19 +14,27 @@ main {
   }
 }
 
-.main-content {
+
+/*.main-content {
   width: calc(100% - #{$sidebar-width});
   margin-right: 56px;
+} */
+
+.overview-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.overview {
+.overview-container-main {
   font-size: 20px;
   line-height: 29px;  
+  margin-top: 0;
+  width: calc(100% - #{$sidebar-width});
+  margin-right: 56px;
+} 
 
-  &-content {
-    margin-top: 0;
-  }
-}
+
 
 aside {
   width: $sidebar-width;
