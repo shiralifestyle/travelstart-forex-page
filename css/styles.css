@@ -89,12 +89,12 @@ li + li {
 }
 
 .accordion:after {
-  content: url("./images/ic_expand_more.svg");
+  content: url("https://d24ndt2yiijez0.cloudfront.net/uploads/image/asset/11852/ic_expand_more.svg");
   float: right;
 }
 
 .active:after {
-  content: url("./images/ic_expand_less.svg");
+  content: url("https://d24ndt2yiijez0.cloudfront.net/uploads/image/asset/11853/ic_expand_less.svg");
 }
 
 .accordion:focus {
@@ -111,7 +111,7 @@ li + li {
 
 /* -------- ------------------------------------ -------- */
 .masthead {
-  background-image: url("./images/forex-hero-img.png");
+  background-image: url("https://d24ndt2yiijez0.cloudfront.net/uploads/image/asset/14961/Forex_hero_image.png");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -194,7 +194,7 @@ main {
 
 aside {
   width: 250px;
-  height: 322px;
+  height: 352px;
   padding: 16px;
   background-color: #FFFFFF;
   box-shadow: 0 0 4px 0 rgba(5, 35, 49, 0.14), 0 3px 4px 0 rgba(5, 35, 49, 0.12);
@@ -216,7 +216,7 @@ nav a {
 }
 
 nav a::after {
-  content: url("./images/ic_chevron_right.svg");
+  content: url("https://d24ndt2yiijez0.cloudfront.net/uploads/image/asset/13850/ic_chevron_right__1_.svg");
   float: right;
 }
 
@@ -240,6 +240,7 @@ nav a::after {
     width: calc(100% - 250px);
     margin: 0;
     padding-right: 56px;
+    transform: translatey(-100px);
   }
 }
 
@@ -249,7 +250,7 @@ footer {
 
 @media (min-width: 1280px) {
   footer {
-    padding: 135px 0 40px 0;
+    padding: 40px 0 40px 0;
   }
 }
 
