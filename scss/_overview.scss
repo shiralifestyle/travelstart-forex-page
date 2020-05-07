@@ -42,7 +42,7 @@ main {
 }
 
 .overview-container-main {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 29px;  
 
   // Desktop: 900px
@@ -53,7 +53,7 @@ main {
 
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 29px;  
     margin-top: 0;
     width: calc(100% - #{$sidebar-width});
@@ -90,7 +90,7 @@ nav a::after {
 }
 
 .numbered-block {
-  radius: 2px;
+  border-radius: 2px;
   height: 58px;
   width: auto;
   border: 1px solid $porcelain;
@@ -104,11 +104,20 @@ nav a::after {
 .main-content {
   margin: 16px;
 
+  // Desktop: 1000px
+  @media (min-width: #{$screen-tablet-large}) {
+    width: calc(100% - #{$sidebar-width});
+    margin: 0;
+    padding-right: 56px;
+    transform: translatey(-80px);
+  }
+
   // Desktop: 1280px
   @media (min-width: #{$screen-desktop-large}) {
     width: calc(100% - #{$sidebar-width});
     margin: 0;
     padding-right: 56px;
+    transform: translatey(-80px);
   }
 } 
 

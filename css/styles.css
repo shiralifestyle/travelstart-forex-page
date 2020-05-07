@@ -89,12 +89,12 @@ li + li {
 }
 
 .accordion:after {
-  content: url("https://d24ndt2yiijez0.cloudfront.net/uploads/image/asset/11852/ic_expand_more.svg");
+  content: url("./images/ic_expand_more.svg");
   float: right;
 }
 
 .active:after {
-  content: url("https://d24ndt2yiijez0.cloudfront.net/uploads/image/asset/11853/ic_expand_less.svg");
+  content: url("./images/ic_expand_less.svg");
 }
 
 .accordion:focus {
@@ -111,15 +111,15 @@ li + li {
 
 /* -------- ------------------------------------ -------- */
 .masthead {
-  background-image: url("https://d24ndt2yiijez0.cloudfront.net/uploads/image/asset/14961/Forex_hero_image.png");
+  background-image: url("./images/forex-hero-img.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  height: 254px;
+  height: 320px;
   width: 100%;
   margin-bottom: 48px;
   display: flex;
-  flex-direction: column;
+  flex-direction: flex-end;
 }
 
 .masthead-title {
@@ -171,7 +171,7 @@ main {
 }
 
 .overview-container-main {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 29px;
 }
 
@@ -184,7 +184,7 @@ main {
 
 @media (min-width: 1280px) {
   .overview-container-main {
-    font-size: 20px;
+    font-size: 16px;
     line-height: 29px;
     margin-top: 0;
     width: calc(100% - 250px);
@@ -194,7 +194,7 @@ main {
 
 aside {
   width: 250px;
-  height: 352px;
+  height: 322px;
   padding: 16px;
   background-color: #FFFFFF;
   box-shadow: 0 0 4px 0 rgba(5, 35, 49, 0.14), 0 3px 4px 0 rgba(5, 35, 49, 0.12);
@@ -216,12 +216,12 @@ nav a {
 }
 
 nav a::after {
-  content: url("https://d24ndt2yiijez0.cloudfront.net/uploads/image/asset/13850/ic_chevron_right__1_.svg");
+  content: url("./images/ic_chevron_right.svg");
   float: right;
 }
 
 .numbered-block {
-  radius: 2px;
+  border-radius: 2px;
   height: 58px;
   width: auto;
   border: 1px solid #E6E9EA;
@@ -235,12 +235,21 @@ nav a::after {
   margin: 16px;
 }
 
+@media (min-width: 900px) {
+  .main-content {
+    width: calc(100% - 250px);
+    margin: 0;
+    padding-right: 56px;
+    transform: translatey(-110px);
+  }
+}
+
 @media (min-width: 1280px) {
   .main-content {
     width: calc(100% - 250px);
     margin: 0;
     padding-right: 56px;
-    transform: translatey(-100px);
+    transform: translatey(-110px);
   }
 }
 
