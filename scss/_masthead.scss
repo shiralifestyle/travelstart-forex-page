@@ -8,10 +8,11 @@
   margin-bottom: 48px;
   display: flex;
   flex-direction: flex-end;
- 
+
   &-title {
     color: $white;
     font-size: 48px;
+    flex-direction: flex-end;
   }
 }
 

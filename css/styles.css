@@ -125,6 +125,7 @@ li + li {
 .masthead-title {
   color: #FFFFFF;
   font-size: 48px;
+  flex-direction: flex-end;
 }
 
 main {
@@ -240,7 +241,7 @@ nav a::after {
     width: calc(100% - 250px);
     margin: 0;
     padding-right: 56px;
-    transform: translatey(-110px);
+    transform: translatey(-80px);
   }
 }
 
@@ -249,7 +250,7 @@ nav a::after {
     width: calc(100% - 250px);
     margin: 0;
     padding-right: 56px;
-    transform: translatey(-110px);
+    transform: translatey(-80px);
   }
 }
 
