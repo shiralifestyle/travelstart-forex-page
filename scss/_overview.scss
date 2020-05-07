@@ -42,7 +42,7 @@ main {
 }
 
 .overview-container-main {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 29px;  
 
   // Desktop: 900px
@@ -59,6 +59,10 @@ main {
     width: calc(100% - #{$sidebar-width});
     margin-right: 64px;
   } 
+}
+
+.overview-container-content {
+  font-size: 16px;
 }
 
 aside {
