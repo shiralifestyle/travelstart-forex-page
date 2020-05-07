@@ -119,13 +119,12 @@ li + li {
   width: 100%;
   margin-bottom: 48px;
   display: flex;
-  flex-direction: flex-end;
+  align-items: flex-end;
 }
 
 .masthead-title {
   color: #FFFFFF;
   font-size: 48px;
-  flex-direction: flex-end;
 }
 
 main {
@@ -191,6 +190,10 @@ main {
     width: calc(100% - 250px);
     margin-right: 64px;
   }
+}
+
+.overview-container-content {
+  font-size: 16px;
 }
 
 aside {
