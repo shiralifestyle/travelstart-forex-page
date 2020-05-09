@@ -120,11 +120,30 @@ li + li {
   margin-bottom: 48px;
   display: flex;
   align-items: flex-end;
+  padding: 0 16px;
+}
+
+@media (min-width: 900px) {
+  .masthead {
+    height: 320px;
+    width: 100%;
+    margin-bottom: 48px;
+    display: flex;
+    align-items: flex-end;
+    padding: 0;
+  }
 }
 
 .masthead-title {
   color: #FFFFFF;
   font-size: 48px;
+  line-height: 48px;
+}
+
+@media (min-width: 900px) {
+  .masthead-title {
+    line-height: 0;
+  }
 }
 
 main {
@@ -171,7 +190,7 @@ main {
 }
 
 .overview-container-main {
-  font-size: 16px;
+  font-size: 20px;
   line-height: 29px;
 }
 
